@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Hind&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Prosto+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/favi/favicon.ico"> 
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/7be5b05fef.js" crossorigin="anonymous"></script>
+     
+    <title>Tech Quiz</title>
+</head>
+<body>
+    <header>
+        <nav class="padding">
+            <div id="logo">
+            <h1>Tech Quiz</h1>
+            </div>
+          
+         <div id="link">
+            <ul>
+                <li id="cross"><a href="javascript:void(0)" ><i class="fa-solid fa-circle-xmark"></i></a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+
+         </div>
+         <div id="bar" class="padding"><i class="fa-solid fa-bars"></i></div>
+        </nav>
+        
+    </header>
+    <section class="padding test">
+        <div class="test-heading">
+            <h1>Attempt MCQ Quiz - Level 1</h1>
+        </div>
+        <div class="test-note">
+            <h4>Note</h4>
+        <ul>
+            <li><i class="fa-solid fa-arrow-right"></i> Three Level Mcq Test</li>
+            <li><i class="fa-solid fa-arrow-right"></i> Attempt all questions</li>
+            <li><i class="fa-solid fa-arrow-right"></i> Score at least 80% for unlocking next level</li>
+            <li><i class="fa-solid fa-arrow-right"></i> Get Certificate at the end</li>
+        </ul>
+        </div>
+        <div class="test-question">
+        <h3> Q1. We use dynamic programming approach when</h3>
+            <div class="options">
+                <ul>
+                    <li>
+                <input type="radio" name="1" value="wrong" data-span-id="wrong11">
+                <span class ="opt">
+                    (A) We need an optimal solution
+                </span>
+                <span id="wrong11" class="colRed check">
+                    <i class="fa-solid fa-circle-xmark"></i>
+                </span>
+            </li>
+
+            <li>
+                <input type="radio" name="1" value="correct" data-span-id ="correct-1">
+                <span class ="opt">
+                (B) The solution has optimal substructure
+                </span>
+                <span id="correct-1" class="colGreen check">
+                    <i class="fa-solid fa-circle-check"></i>
+                </span>
+            </li>
+
+            <li>
+                <input type="radio" name="1" value="wrong" data-span-id="wrong-13">
+                <span class ="opt">
+                    (C) The given problem can be reduced to the 3-SAT problem
+                </span>
+                <span id="wrong-13" class="colRed check">
+                    <i class="fa-solid fa-circle-xmark"></i>
+                </span>
+            </li>
+
+            <li>
+                <input type="radio" name="1" value="wrong" data-span-id="wrong-14">
+                <span class ="opt">
+                    (D) It’s faster than Greedy
+                </span>
+                <span id="wrong-14" class="colRed check">
+                    <i class="fa-solid fa-circle-xmark"></i>
+                </span>
+            </li>
+                </ul>
+            </div>
+        </div>
+        <div class="test-question">
+            <h3> Q2. In the above question, which entry of the array X, if TRUE, implies that there is a subset whose elements sum to W?
+            </h3>
+            <div class="options">
+                <ul>
+                    <li>
+                <input type="radio" name="2" value="wrong" data-span-id="wrong-21">
+                <span class ="opt">
+                    (A) X[1, W]
+                </span>
+                <span id="wrong-21" class="colRed check">
+                    <i class="fa-solid fa-circle-xmark"></i>
+                </span>
+            </li>
+
+            <li>
+                <input type="radio" name="2" value="wrong" data-span-id="wrong-22">
+                <span class ="opt">
+                    (B) X[n ,0]
+                </span>
+                <span id="wrong-22" class="colRed check">
+                    <i class="fa-solid fa-circle-xmark"></i>
+                </span>
+            </li>
+
+            <li>
+                <input type="radio" name="2" value="correct" data-span-id="correct-2">
+                <span class ="opt">
+                    (C) X[n, W]
+                </span>
+                <span id="correct-2" class="colGreen check">
+                    <i class="fa-solid fa-circle-check"></i>
+                </span>
+            </li>
+
+            <li>
+                <input type="radio" name="2" value="wrong" data-span-id="wrong-24">
+                <span class ="opt">
+                    (D) X[n -1, n]
+                </span>
+                <span id="wrong-24" class="colRed check">
+                    <i class="fa-solid fa-circle-xmark"></i>
+                </span>
+            </li>
+                </ul>
+            </div>
+        </div>
+        
+            <div class="test-question">
+                <h3> Q3. Given a sorted array of integers, what can be the minimum worst case time complexity to find ceiling of a number x in given array? Ceiling of an element x is the smallest element present in array which is greater than or equal to x. Ceiling is not present if x is greater than the maximum element present in array. For example, if the given array is {12, 67, 90, 100, 300, 399} and x = 95, then output should be 100.
+                </h3>
+                <div class="options">
+                <ul>
+                    <li>
+                <input type="radio" name="3" value="wrong" data-span-id="wrong-31">
+                <span class ="opt">
+                    (A) O(LogLogn)
+                </span>
+                <span id="wrong-31" class="colRed check">
+                    <i class="fa-solid fa-circle-xmark"></i>
+                </span>
+            </li>
+
+            <li>
+                <input type="radio" name="3" value="wrong" data-span-id="wrong-32">
+                <span class ="opt">
+                    (B) O(n)
+                </span>
+                <span id="wrong-32" class="colRed check">
+                    <i class="fa-solid fa-circle-xmark"></i>
+                </span>
+            </li>
+
+            <li>
+                <input type="radio" name="3" value="correct" data-span-id="correct-3">
+                <span class ="opt">
+                    (C) O(Logn)
+                </span>
+                <span class="colGreen check" id="correct-3">
+                    <i class="fa-solid fa-circle-check"></i>
+                </span>
+            </li>
+
+            <li>
+                <input type="radio" name="3" value="wrong" data-span-id="wrong-34">
+                <span class ="opt">
+                    (D) O(Logn * Logn)
+                </span>
+                <span id="wrong-34" class="colRed check">
+                    <i class="fa-solid fa-circle-xmark"></i>
+                </span>
+            </li>
+                </ul>
+            </div>
+            </div>
+
+            <div class="test-question">
+                <h3> Q4. Given an unsorted array. The array has this property that every element in array is at most k distance from its position in sorted array where k is a positive integer smaller than size of array. Which sorting algorithm can be easily modified for sorting this array and what is the obtainable time complexity?
+                </h3>
+                <div class="options">
+                <ul>
+                    <li>
+                        <input type="radio" name="4" value="wrong" data-span-id="wrong41">
+                        <span class ="opt">
+                            (A) Insertion Sort with time complexity O(kn)
+                        </span>
+                        <span id="wrong41" class="colRed check">
+                            <i class="fa-solid fa-circle-xmark"></i>
+                        </span>
+                    </li>
+                    <li>
+                        <input type="radio" name="4" value="correct" data-span-id="wrong42">
+                        <span class ="opt">
+                            (B) Heap Sort with time complexity O(nLogk)
+                        </span>
+                        <span id="wrong42" class="colGreen check">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </span>
+                    </li>
+                    <li>
+                        <input type="radio" name="4" value="wrong" data-span-id="wrong43">
+                        <span class ="opt">
+                            (C) Quick Sort with time complexity O(kLogk)
+                        </span>
+                        <span id="wrong43" class="colRed check">
+                            <i class="fa-solid fa-circle-xmark"></i>
+                        </span>
+                    </li>
+                    <li>
+                        <input type="radio" name="4" value="wrong" data-span-id="wrong44">
+                        <span class ="opt">
+                            (D) Merge Sort with time complexity O(kLogk)
+                        </span>
+                    
+                    <span id="wrong44" class="colRed check">
+                         <i class="fa-solid fa-circle-xmark"></i>
+                    </span>
+
+                </li>
+                </ul>
+            </div>
+            </div>
+
+            <div class="test-question">
+                <h3> Q5. The recurrence relation capturing the optimal time of the Tower of Hanoi problem with n discs is.
+                </h3>
+                <div class="options">
+                <ul>
+                    <li>
+                        <input type="radio" name="5" value="wrong" data-span-id="w51">
+                        <span class ="opt">
+                            (A) T(n) = 2T(n – 2) + 2
+                        </span>
+                        <span id="w51" class="colRed check">
+                            <i class="fa-solid fa-circle-xmark"></i>
+                        </span>
+                    </li>
+                    <li>
+                        <input type="radio" name="5" value="wrong" data-span-id="w52">
+                        <span class ="opt">
+                            (B) T(n) = 2T(n – 1) + n
+                        </span>
+                        <span id="w52" class="colRed check">
+                            <i class="fa-solid fa-circle-xmark"></i>
+                        </span>
+                    </li>
+                    <li>
+                        <input type="radio" name="5" value="wrong" data-span-id="w53">
+                        <span class ="opt">
+                            (C) T(n) = 2T(n/2) + 1
+                        </span>
+                        <span id="w53" class="colRed check">
+                            <i class="fa-solid fa-circle-xmark"></i>
+                        </span>
+                    </li>
+                    <li>
+                        <input type="radio" name="5" value="correct" data-span-id="c54">
+                        <span class ="opt">
+                            (D) T(n) = 2T(n – 1) + 1
+                        </span>
+                        <span id="c54" class="colGreen check">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </span>
+                    </li>
+                </ul>
+            </div>
+            </div>
+
+            
+            <div class="test-question">
+                <h3> Q6. Which of the following is true about Kruskal andPrim MST algorithms? Assume that Prim is implemented for adjacency list representation using Binary Heap and Kruskal is implemented using union by rank.
+                </h3>
+                <div class="options">
+                <ul>
+                    <li>
+                        <input type="radio" name="6" value="correct" data-span-id="c61">
+                        <span class ="opt">
+                            (A) Worst case time complexity of both algorithms is same
+                        </span>
+                        <span id="c61" class="colGreen check">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </span>
+                    </li>
+                    <li>
+                        <input type="radio" name="6" value="wrong" data-span-id="w62">
+                        <span class ="opt">
+                            (B) Worst case time complexity of Kruskal is better than Prim
+                        </span>
+                        <span id="w62" class="colRed check">
+                            <i class="fa-solid fa-circle-xmark"></i>
+                        </span>
+                    </li>
+                    <li>
+                        <input type="radio" name="6" value="wrong" data-span-id="w63">
+                        <span class ="opt">
+                            (C) Worst case time complexity of Prim is better than Kruskal
+                        </span>
+                        <span id="w63" class="colRed check">
+                            <i class="fa-solid fa-circle-xmark"></i>
+                        </span>
+                    </li>
+                    <li>
+                        <input type="radio" name="6" value="wrong" data-span-id="w64">
+                        <span class ="opt">
+                            (D) None 
+                        </span>
+                        <span id="w64" class="colRed check">
+                            <i class="fa-solid fa-circle-xmark"></i>
+                        </span>
+                    </li>
+                </ul>
+            </div>
+            </div>
+
+            <div class="test-question">
+                <h3> Q7. Suppose the letters a, b, c, d, e, f have probabilities 1/2, 1/4, 1/8, 1/16, 1/32, 1/32 respectively. Which of the following is the Huffman code for the letter a, b, c, d, e, f?
+                </h3>
+                <div class="options">
+                <ul>
+                    <li>
+                        <input type="radio" name="7" value="correct" data-span-id="c71">
+                        <span class ="opt">
+                            (A) 0, 10, 110, 1110, 11110, 11111
+                        </span>
+                        <span id="c71" class="colGreen check">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </span>
+                    </li>
+                    <li>
+                        <input type="radio" name="7" value="wrong" data-span-id="w72">
+                        <span class ="opt">
+                            (B) 11, 10, 011, 010, 001, 000
+                        </span>
+                        <span id="w72" class="colRed check">
+                            <i class="fa-solid fa-circle-xmark"></i>
+                        </span>
+                    </li>
+                    <li>
+                        <input type="radio" name="7" value="wrong" data-span-id="w73">
+                        <span class ="opt">
+                            (C) 11, 10, 01, 001, 0001, 0000
+                        </span>
+                        <span id="w73" class="colRed check">
+                            <i class="fa-solid fa-circle-xmark"></i>
+                        </span>
+                    </li>
+                    <li>
+                        <input type="radio" name="7" value="wrong" data-span-id="w74">
+                        <span class ="opt">
+                            (D) 110, 100, 010, 000, 001, 111 
+                        </span>
+                        <span id="w74" class="colRed check">
+                            <i class="fa-solid fa-circle-xmark"></i>
+                        </span>
+                    </li>
+                </ul>
+            </div>
+            </div>
+
+            <div class="test-question">
+                <h3> Q8. Which of the following standard algorithms is not Dynamic Programming based.
+                </h3>
+                <div class="options">
+                <ul>
+                    <li>
+                        <input type="radio" name="8" value="wrong" data-span-id="w81">
+                        <span class ="opt">
+                            (A) Bellman–Ford Algorithm for single source shortest path
+                        </span>
+                        <span id="w81" class="colRed check">
+                            <i class="fa-solid fa-circle-xmark"></i>
+                        </span>
+                    </li>
+                    <li>
+                        <input type="radio" name="8" value="wrong" data-span-id="w82">
+                        <span class ="opt">
+                            (B) Floyd Warshall Algorithm for all pairs shortest paths
+                        </span>
+                        <span id="w82" class="colRed check">
+                            <i class="fa-solid fa-circle-xmark"></i>
+                        </span>
+                    </li>
+                    <li>
+                        <input type="radio" name="8" value="wrong" data-span-id="w83">
+                        <span class ="opt">
+                            (C) 0-1 Knapsack problem
+                        </span>
+                        <span id="w83" class="colRed check">
+                            <i class="fa-solid fa-circle-xmark"></i>
+                        </span>
+                    </li>
+                    <li>
+                        <input type="radio" name="8" value="correct" data-span-id="w84">
+                        <span class ="opt">
+                            (D) Prim's Minimum Spanning Tree 
+                        </span>
+                        <span id="w84" class="colGreen check">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </span>
+                    </li>
+                </ul>
+            </div>
+            </div>
+            <div class="test-question">
+                <h3> Q9. Kadane algorithm is used to find:
+                </h3>
+                <div class="options">
+                <ul>
+                    <li>
+                        <input type="radio" name="9" value="wrong" data-span-id="w91">
+                        <span class ="opt">
+                            (A) Maximum sum subsequence in an array
+                        </span>
+                    </li>
+                    <li>
+                        <input type="radio" name="9" value="correct" data-span-id="c91">
+                        <span class ="opt">
+                            (B) Maximum sum subarray in an array
+                        </span>
+                        <span id="c91" class="colGreen check">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </span>
+                    </li>
+                    <li>
+                        <input type="radio" name="9" value="wrong" data-span-id="w92">
+                        <span class ="opt">
+                            (C) Maximum product subsequence in an array
+                        </span>
+                        <span id="w92" class="colRed check">
+                            <i class="fa-solid fa-circle-xmark"></i>
+                        </span>
+                    </li>
+                    <li>
+                        <input type="radio" name="9" value="wrong" data-span-id="w93">
+                        <span class ="opt">
+                            (D) Maximum product subarray in an array 
+                        </span>
+                        <span id="w93" class="colRed check">
+                            <i class="fa-solid fa-circle-xmark"></i>
+                        </span>
+                    </li>
+                </ul>
+            </div>
+            </div>
+            <div class="test-question">
+                <h3> Q10. Which of the following sorting algorithms can be used to sort a random linked list with minimum time complexity?
+                </h3>
+                <div class="options">
+                <ul>
+                    <li><input type="radio" name="10" value="wrong" data-span-id="w101">
+                        <span class ="opt">
+                            (A) Insertion Sort
+                        </span>
+                         <span id="w101" class="colRed check">
+                            <i class="fa-solid fa-circle-xmark"></i>
+                        </span>
+                    </li>
+                    <li>
+                        <input type="radio" name="10" value="correct" data-span-id="w102">
+                        <span class ="opt">
+                            (B) Quick Sort
+                        </span>
+                        <span id="w102" class="colGreen check">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </span>
+                    </li>
+                    <li>
+                        <input type="radio" name="10" value="wrong" data-span-id="w103">
+                        <span class ="opt">
+                            (C) Heap Sort
+                        </span>
+                        <span id="w103" class="colRed check">
+                            <i class="fa-solid fa-circle-xmark"></i>
+                        </span>
+                    </li>
+                    <li>
+                        <input type="radio" name="10" value="wrong" data-span-id="w104">
+                        <span class ="opt">
+                            (D) Merge Sort
+                        </span>
+                        <span id="w104" class="colRed check">
+                            <i class="fa-solid fa-circle-xmark"></i>
+                        </span>
+                    </li>
+                </ul>
+            </div>
+            </div>
+        
+        <!----------------------------- TODO ----------------------------->
+            <button id="sub-btn" class="b">Submit</button>
+            <button id="nxt-btn" class="b" data-next-page="quiz2.html">Next</button>
+        
+        </section>
+<section id="contact" class="padding">
+    <h2>Contact Us</h2>
+    <div id="contact-box">
+    <div id="form">
+      <form action="">
+        <input type="name" placeholder="Enter Your Name" class="inherit">
+        <input type="email" placeholder="Enter Your Email" class="inherit">
+        <input type="text" placeholder="Write Your Message" class="inherit">
+        <button class="button">Submit</button>
+      </form>
+    </div>
+
+<div id="social">
+    <a href=""><i class="fa-brands fa-square-facebook"></i></a>
+    <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+    <a href=""><i class="fa-brands fa-square-twitter"></i></a>
+    <a href=""><i class="fa-brands fa-square-youtube"></i></a>
+</div>
+</div>
+</section>
+<section id="copyright">
+<div id="copyright-text">
+    <p>Copyright &copy, ALL RIGHT'S RESERVERD </p>
+</div>
+</section>
+<script type="text/javascript">
+    var btn = document.getElementsByClassName("button");
+    btn[0].addEventListener("click", function(){
+        alert("Submitted!!");
+    });
+</script>
+<script type="text/javascript" src="result.js"></script>
+</body>
+</html>

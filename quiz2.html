@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Hind&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Prosto+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/favi/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/7be5b05fef.js" crossorigin="anonymous"></script>
+     
+    <title>Tech Quiz</title>
+</head>
+<body>
+    <header>
+        <nav class="padding">
+            <div id="logo">
+            <h1>Tech Quiz</h1>
+            </div>
+          
+         <div id="link">
+            <ul>
+                <li id="cross"><a href="javascript:void(0)" ><i class="fa-solid fa-circle-xmark"></i></a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+
+         </div>
+         <div id="bar" class="padding"><i class="fa-solid fa-bars"></i></div>
+        </nav>
+        
+    </header>
+    <section class="padding test">
+        <div class="test-heading">
+            <h1>Attempt MCQ Quiz - Level 2</h1>
+        </div>
+        <div class="test-note">
+            <h4>Note</h4>
+        <ul>
+            <li><i class="fa-solid fa-arrow-right"></i> Three Level Mcq Test</li>
+            <li><i class="fa-solid fa-arrow-right"></i> Attempt all questions</li>
+            <li><i class="fa-solid fa-arrow-right"></i> Score at least 80% for unlocking next level</li>
+            <li><i class="fa-solid fa-arrow-right"></i> Get Certificate at the end</li>
+        </ul>
+        </div>
+        <div class="test-question">
+        <h3> Q1. What is the output of following function for start pointing to first node of following linked list? 1->2->3->4->5->6<br>
+            void fun(struct node* start)
+{
+  if(start == NULL)
+    return;
+  printf("%d  ", start->data); 
+  
+  if(start->next != NULL )
+    fun(start->next->next);
+  printf("%d  ", start->data);
+}
+        </h3>
+            <div class="options">
+                <ul>
+                    <li><input type="radio" name="1" value="wrong" data-span-id="w1">
+                        <span class ="opt">
+                            (A) 1 4 6 6 4 1
+                        </span>
+                        <span id="w1" class="colRed check">
+                            <i class="fa-solid fa-circle-xmark"></i>
+                        </span>
+                    </li>
+                    <li>
+                        <input type="radio" name="1" value="wrong" data-span-id="w2">
+                        <span class ="opt">
+                            (B) 1 3 5 1 3 5
+                        </span>
+                        <span id="w2" class="colRed check">
+                            <i class="fa-solid fa-circle-xmark"></i>
+                        </span>
+                    </li>
+                    <li>
+                        <input type="radio" name="1" value="wrong" data-span-id="w3">
+                        <span class ="opt">
+                            (C) 1 2 3 5
+                        </span>
+                        <span id="w3" class="colRed check">
+                            <i class="fa-solid fa-circle-xmark"></i>
+                        </span>
+                    </li>
+                    <li>
+                        <input type="radio" name="1" value="correct" data-span-id="w4">
+                        <span class ="opt">
+                            (D) 1 3 5 5 3 1
+                        </span>
+                        <span id="w4" class="colGreen check">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="test-question">
+            <h3> Q2. Consider a hash table of size seven, with starting index zero, and a hash function (3x + 4)mod7. Assuming the hash table is initially empty, which of the following is the contents of the table when the sequence 1, 3, 8, 10 is inserted into the table using closed hashing? Note that ‘_’ denotes an empty location in the table.
+            </h3>
+            <div class="options">
+                <ul>
+                    <li><input type="radio" name="2" value="wrong" data-span-id="w21">
+                        <span class ="opt">
+                            (A) 8, _, _, _, _, _, 10
+                        </span>
+                         <span id="w21" class="colRed check">
+                            <i class="fa-solid fa-circle-xmark"></i>
+                        </span>
+                    </li>
+                    <li>
+                        <input type="radio" name="2" value="correct" data-span-id="w22">
+                        <span class ="opt">
+                            (B) 1, 8, 10, _, _, _, 3
+                        </span>
+                        <span id="w22" class="colGreen check">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </span>
+                    </li>
+                    <li>
+                        <input type="radio" name="2" value="wrong" data-span-id="w23">
+                        <span class ="opt">
+                            (C) 1, _, _, _, _, _,3
+                        </span>
+                        <span id="w23" class="colRed check">
+                            <i class="fa-solid fa-circle-xmark"></i>
+                        </span>
+                    </li>
+                    <li>
+                        <input type="radio" name="2" value="wrong" data-span-id="w24">
+                        <span class ="opt">
+                            (D) 1, 10, 8, _, _, _, 3
+                        </span>
+                        <span id="w24" class="colRed check">
+                            <i class="fa-solid fa-circle-xmark"></i>
+                        </span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+            <div class="test-question">
+                <h3> Q3. Consider a hash table with 100 slots. Collisions are resolved using chaining. Assuming simple uniform hashing, what is the probability that the first 3 slots are unfilled after the first 3 insertions?
+                </h3>
+                <div class="options">
+                <ul>
+                    <li>
+                        <input type="radio" name="3" value="correct" data-span-id="w31">
+                        <span class ="opt">(A) (97 × 97 × 97)/100<sup>3</sup></span>
+                         <span id="w31" class="colGreen check">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </span>
+                    </li>
+                    <li>
+                        <input type="radio" name="3" value="wrong"  data-span-id="w32">
+                        <span class ="opt">(B) (99 × 98 × 97)/100<sup>3</sup></span>
+                        <span id="w32" class="colRed check">
+                            <i class="fa-solid fa-circle-xmark"></i>
+                        </span>
+                    </li>
+                    <li>
+                        <input type="radio" name="3" value="wrong"  data-span-id="w33"><span class ="opt">(C) (97 × 96 × 95)/100<sup>3</sup></span>
+                        <span id="w33" class="colRed check">
+                            <i class="fa-solid fa-circle-xmark"></i>
+                        </span>
+                    </li>
+                    <li><input type="radio" name="3" value="wrong"  data-span-id="w34"><span class ="opt">(D) (97 × 96 × 95)/(3! × 100<sup>3</sup>)</span>
+                        <span id="w34" class="colRed check">
+                            <i class="fa-solid fa-circle-xmark"></i>
+                        </span></li>
+                </ul>
+            </div>
+            </div>
+
+            <div class="test-question">
+                <h3> Q4. Let A[1...n] be an array of n distinct numbers. If i < j and A[i] > A[j], then the pair (i, j) is called an inversion of A. What is the expected number of inversions in any permutation on n elements ?
+                </h3>
+                <div class="options">
+                <ul>
+                    <li><input type="radio" name="4" value="wrong" data-span-id="w41"><span class ="opt">(A) n(n-1)/2</span>
+                        <span id="w41" class="colRed check">
+                            <i class="fa-solid fa-circle-xmark"></i>
+                        </span>
+                    </li>
+                    <li><input type="radio" name="4" value="correct" data-span-id="w42"><span class ="opt">(B) n(n-1)/4</span>
+                        <span id="w42" class="colGreen check">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </span>
+                    </li>
+                    <li><input type="radio" name="4" value="wrong" data-span-id="w43"><span class ="opt">(C) n(n+1)/4</span>
+                        <span id="w43" class="colRed check">
+                            <i class="fa-solid fa-circle-xmark"></i>
+                        </span></li>
+                    <li><input type="radio" name="4" value="wrong" data-span-id="w44"><span class ="opt">(D) 2n[logn]</span>
+                        <span id="w44" class="colRed check">
+                            <i class="fa-solid fa-circle-xmark"></i>
+                        </span></li>
+                </ul>
+            </div>
+            </div>
+
+            <div class="test-question">
+                <h3> Q5. The recurrence relation capturing the optimal time of the Tower of Hanoi problem with n discs is.
+                </h3>
+                <div class="options">
+                <ul>
+                    <li><input type="radio" name="5" value="wrong"><span class ="opt" data-span-id="w51">(A) T(n) = 2T(n – 2) + 2</span>
+                        <span id="w51" class="colRed check">
+                            <i class="fa-solid fa-circle-xmark"></i>
+                        </span></li>
+                    <li><input type="radio" name="5" value="wrong" data-span-id="w52"><span class ="opt">(B) T(n) = 2T(n – 1) + n</span>
+                        <span id="w52" class="colRed check">
+                            <i class="fa-solid fa-circle-xmark"></i>
+                        </span></li>
+                    <li><input type="radio" name="5" value="wrong" data-span-id="w53"><span class ="opt">(C) T(n) = 2T(n/2) + 1</span>
+                    <span id="w53" class="colRed check">
+                            <i class="fa-solid fa-circle-xmark"></i>
+                        </span></li>
+                    <li><input type="radio" name="5" value="correct" data-span-id="w54"><span class ="opt">(D) T(n) = 2T(n – 1) + 1</span>
+                        <span id="w54" class="colGreen check">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </span></li>
+                </ul>
+            </div>
+            </div>
+
+            
+            <div class="test-question">
+                <h3> Q6. A three dimensional array in ‘C’ is declared as int A[x][y][z]. Consider that array elements are stored in row major order and indexing begins from 0. Here, the address of an item at the location A[p][q][r] can be computed as follows (where w is the word length of an integer):
+                </h3>
+                <div class="options">
+                <ul>
+                    <li><input type="radio" name="6" value="wrong" data-span-id="w61"><span class ="opt">(A) &A[0][0][0] + w(y * z * q + z * p + r)</span>
+                        <span id="w61" class="colRed check">
+                            <i class="fa-solid fa-circle-xmark"></i>
+                        </span>
+                    </li>
+                    <li><input type="radio" name="6" value="correct"  data-span-id="w62"><span class ="opt">(B) &A[0][0][0] + w(y * z * p + z*q + r)</span>
+                    <span id="w62" class="colGreen check">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </span></li>
+                    <li><input type="radio" name="6" value="wrong"  data-span-id="w63"><span class ="opt">(C) &A[0][0][0] + w(x * y * p + z * q+ r)</span>
+                    <span id="w63" class="colRed check">
+                            <i class="fa-solid fa-circle-xmark"></i>
+                        </span></li>
+                    <li><input type="radio" name="6" value="wrong"  data-span-id="w64"><span class ="opt">(D) &A[0][0][0] + w(x * y * q + z * p + r)</span>
+                    <span id="w64" class="colRed check">
+                            <i class="fa-solid fa-circle-xmark"></i>
+                        </span></li>
+                </ul>
+            </div>
+            </div>
+
+            <div class="test-question">
+                <h3> Q7. The inorder and preorder traversal of a binary tree are d b e a f c g and a b d e c f g, respectively. The postorder traversal of the binary tree is:
+                </h3>
+                <div class="options">
+                <ul>
+                    <li><input type="radio" name="7" value="correct" data-span-id="w71"><span class ="opt">(A) d e b f g c a</span>
+                        <span id="w71" class="colGreen check">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </span></li>
+                    <li><input type="radio" name="7" value="wrong" data-span-id="w72"><span class ="opt">(B) e d b g f c a</span>
+                        <span id="w72" class="colRed check">
+                            <i class="fa-solid fa-circle-xmark"></i>
+                        </span></li>
+                    <li><input type="radio" name="7" value="wrong" data-span-id="w73"><span class ="opt">(C) e d b f g c a</span>
+                        <span id="w73" class="colRed check">
+                            <i class="fa-solid fa-circle-xmark"></i>
+                        </span></li>
+                    <li><input type="radio" name="7" value="wrong" data-span-id="w74"><span class ="opt">(D) d e f g b c a </span>
+                        <span id="w74" class="colRed check">
+                            <i class="fa-solid fa-circle-xmark"></i>
+                        </span></li>
+                </ul>
+            </div>
+            </div>
+
+            <div class="test-question">
+                <h3> Q8. Which of the following standard algorithms is not Dynamic Programming based.
+                </h3>
+                <div class="options">
+                <ul>
+                    <li><input type="radio" name="8" value="wrong"><span class ="opt" data-span-id="w81">(A) Bellman–Ford Algorithm for single source shortest path</span>
+                        <span id="w81" class="colRed check">
+                            <i class="fa-solid fa-circle-xmark"></i>
+                        </span>
+                    </li>
+                    <li><input type="radio" name="8" value="wrong" data-span-id="w82"><span class ="opt">(B) Floyd Warshall Algorithm for all pairs shortest paths</span>
+                        <span id="w82" class="colRed check">
+                            <i class="fa-solid fa-circle-xmark"></i>
+                        </span></li>
+                    <li><input type="radio" name="8" value="wrong" data-span-id="w83"><span class ="opt">(C) 0-1 Knapsack problem</span>
+                        <span id="w83" class="colRed check">
+                            <i class="fa-solid fa-circle-xmark"></i>
+                        </span></li>
+                    <li><input type="radio" name="8" value="correct" data-span-id="w84"><span class ="opt">(D) Prim's Minimum Spanning Tree </span>
+                        <span id="w84" class="colGreen check">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </span></li>
+                </ul>
+            </div>
+            </div>
+            <div class="test-question">
+                <h3> Q9. Kadane algorithm is used to find:
+                </h3>
+                <div class="options">
+                <ul>
+                    <li><input type="radio" name="9" value="wrong" data-span-id="w91"><span class ="opt">(A) Maximum sum subsequence in an array</span>
+                        <span id="w91" class="colRed check">
+                            <i class="fa-solid fa-circle-xmark"></i>
+                        </span></li>
+                    <li><input type="radio" name="9" value="correct" data-span-id="w92"><span class ="opt">(B) Maximum sum subarray in an array</span>
+                        <span id="w92" class="colGreen check">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </span></li>
+                    <li><input type="radio" name="9" value="wrong" data-span-id="w93"><span class ="opt">(C) Maximum product subsequence in an array</span>
+                        <span id="w93" class="colRed check">
+                            <i class="fa-solid fa-circle-xmark"></i>
+                        </span></li>
+                    <li><input type="radio" name="9" value="wrong" data-span-id="w94"><span class ="opt">(D) Maximum product subarray in an array </span>
+                        <span id="w94" class="colRed check">
+                            <i class="fa-solid fa-circle-xmark"></i>
+                        </span></li>
+                </ul>
+            </div>
+            </div>
+            <div class="test-question">
+                <h3> Q10. Maximum Subarray Sum problem is to find the subarray with maximum sum. For example, given an array {12, -13, -5, 25, -20, 30, 10}, the maximum subarray sum is 45. The naive solution for this problem is to calculate sum of all subarrays starting with every element and return the maximum of all. We can solve this using Divide and Conquer, what will be the worst case time complexity using Divide and Conquer?
+                </h3>
+                <div class="options">
+                <ul>
+                    <li>
+                        <input type="radio" name="10" value="wrong" data-span-id="w101">
+                        <span class ="opt">
+                            (A) O(n)
+                        </span>
+                        <span id="w101" class="colRed check">
+                            <i class="fa-solid fa-circle-xmark"></i>
+                        </span>
+                    </li>
+
+                    <li>
+                        <input type="radio" name="10" value="correct" data-span-id="w102">
+                        <span class ="opt">
+                            (B) O(nLogn)
+                        </span>
+                        <span id="w102" class="colGreen check">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </span>
+                    </li>
+
+                    <li>
+                        <input type="radio" name="10" value="wrong" data-span-id="w103">
+                        <span class ="opt">
+                            (C) O(n^2)
+                        </span>
+                        <span id="w103" class="colRed check">
+                            <i class="fa-solid fa-circle-xmark"></i>
+                        </span>
+                    </li>
+
+                    <li>
+                        <input type="radio" name="10" value="wrong" data-span-id="w104">
+                        <span class ="opt">(D) O(Logn)</span>
+                        <span id="w104" class="colRed check">
+                            <i class="fa-solid fa-circle-xmark"></i>
+                        </span>
+                    </li>
+                </ul>
+            </div>
+            </div>
+        
+        <!----------------------------- TODO ----------------------------->
+            <button id="sub-btn" class="b">Submit</button>
+            <button id="nxt-btn" class="b" data-next-page="quiz3.html">Next</button>
+        
+        </section>
+<section id="contact" class="padding">
+    <h2>Contact Us</h2>
+    <div id="contact-box">
+    <div id="form">
+      <form action="">
+        <input type="name" placeholder="Enter Your Name" class="inherit">
+        <input type="email" placeholder="Enter Your Email" class="inherit">
+        <input type="text" placeholder="Write Your Message" class="inherit">
+        <button class="button">Submit</button>
+      </form>
+    </div>
+
+<div id="social">
+    <a href=""><i class="fa-brands fa-square-facebook"></i></a>
+    <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+    <a href=""><i class="fa-brands fa-square-twitter"></i></a>
+    <a href=""><i class="fa-brands fa-square-youtube"></i></a>
+</div>
+</div>
+</section>
+<section id="copyright">
+<div id="copyright-text">
+    <p>Copyright &copy, ALL RIGHT'S RESERVERD </p>
+</div>
+</section>
+<script type="text/javascript">
+    var btn = document.getElementsByClassName("button");
+    btn[0].addEventListener("click", function(){
+        alert("Submitted!!");
+    });
+</script>
+<script type="text/javascript" src="result.js"></script>
+</body>
+</html>
